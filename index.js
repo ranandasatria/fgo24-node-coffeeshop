@@ -1,11 +1,11 @@
 import { select } from '@inquirer/prompts';
-import { chooseCategory } from './categoryPicker.js';
-// import { showCart } from './cart.js';
-// import { checkout } from './checkout.js';
+import { chooseCategory } from './src/categoryPicker.js';
+import { showCart } from './src/cart.js';
+import { checkout } from './src/checkout.js';
 
 async function showHome() {
   const inputan = await select({
-    message: "HOME",
+    message: "Home",
     choices: [
       { name: "1. Order", value: "order" },
       { name: "2. Keranjang", value: "keranjang"},
@@ -26,4 +26,5 @@ async function showHome() {
 
 showHome();
 
-// Belum selesai menu konfirmasi makanan, keranjang, dan bayar
+// @inquirer/prompts select documentation: https://github.com/SBoudrias/Inquirer.js/tree/main/packages/select 
+// @inquirer/prompts confirm documentation:https://github.com/SBoudrias/Inquirer.js/tree/main/packages/confirm

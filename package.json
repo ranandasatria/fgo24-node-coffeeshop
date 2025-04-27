@@ -1,16 +1,33 @@
 {
-  "name": "fazzfood",
+  "name": "fgo24-git-coffeeshop",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "lint": "eslint index.js src/**/*.js",
+    "lint:fix": "eslint index.js src/**/*.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0"
+  },
   "dependencies": {
     "@inquirer/prompts": "^7.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranandasatria/fgo24-node-coffeeshop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ranandasatria/fgo24-node-coffeeshop/issues"
+  },
+  "homepage": "https://github.com/ranandasatria/fgo24-node-coffeeshop#readme",
+  "description": ""
 }
